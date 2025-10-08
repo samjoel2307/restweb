@@ -1,0 +1,143 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    accent-color: #FFD700;
+}
+
+body {
+    background-color:#FFD700;
+    overflow-x: hidden;
+}
+.controller{
+    width: 100%;
+}
+#navbar {
+    background-color: #6A0DAD;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 25px;
+    margin-left: 0%;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: center;
+    padding:10px;
+    font-family: 'Roboto Mono', monospace;
+    color:#FAF9F6;
+}
+
+#navbar a {
+    text-decoration: none;
+    font-weight:700;
+    font-size: large;
+    color: #FAF9F6;
+    font-family:'poppins', sans-serif;
+}
+
+li {
+    padding-top: 10px;
+    padding:10px;
+}
+
+#head {
+    font-family: playfair display;
+    position: relative;
+    top:-2px;
+    font-size:xx-large;
+    margin-left:60px;
+    color:#FAF9F6;
+}
+
+p {
+    text-align: left;
+    color:#2A2D43;
+}
+
+.content-type {
+    margin-top: 170px;
+    animation: slideInLeft 1s ease-out forwards;
+    display: inline-block;
+    position: relative;
+    bottom:100px;
+    right:200px;
+}
+.content-type h1,p{
+    color:#2A2D43;
+}
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+*:hover{
+    cursor:context-menu;
+}
+.menu-item {
+    width: 300px;
+    height: 400px;
+    display: inline-block;
+    object-fit: cover;
+    border-radius: 10px;
+    animation: scaleUp 1.2s ease-out forwards;
+    position: relative;
+    left: 1100px;
+    top:60px;
+    border-radius: 25%;
+}
+@keyframes scaleUp {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+li:hover{
+    background-color: #2A2D43;
+    border-radius: 10px;
+    
+}
+#navbar a:hover{
+    color: #A2C7E5;
+    cursor:pointer;
+}
+#footer h4{
+    word-spacing: 20px;
+}
+#footer h1{
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    right:10px;
+    bottom:0px;
+}
+#footer h4{
+    position: relative;
+    top:6px;
+}
+#head {
+  font-family: 'Great Vibes', cursive;
+}
+
+.content-type h1 {
+  font-family: 'Satisfy', cursive;
+}
+
+.content-type p {
+  font-family: 'Dancing Script', cursive;
+}
